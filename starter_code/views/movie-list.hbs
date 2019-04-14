@@ -1,0 +1,13 @@
+<section class="movies">
+  <h2>{{Title}}</h2>
+  <p>Click on the movie to check the showtimes!</p>
+  <ul>
+    {{#each docs}}
+    <li>
+      <img src="{{this.image}}" alt="{{this.title}}">
+      <h4>{{this.title}}</h4>
+      <a href="movie/{{this.title}}">See more</a>
+    </li>
+    {{/each}}
+  </ul>
+</section>

@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo");
+body {
+  font-family: "Arvo", monospace;
+  font-size: 16px;
+  background: #f5f4f4;
+}
+
+a {
+  color: #00b7ff;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.movie-details {
+  color: #002626;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.movie-details .movie-bg {
+  min-width: 280px;
+  margin: 10px;
+}
+
+.movie-details .movie-bg img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-details .info {
+  margin-left: 20px;
+}
+
+.movie-details .info span {
+  font-weight: bold;
+}
+
+.movie-details .info .stars li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.movie-details .info .showtime li {
+  display: inline-block;
+  margin-right: 5px;
+  padding-right: 5px;
+  border-right: 1px solid #002626;
+}
+
+.movie-details .info .showtime li:last-child {
+  border-right: 0;
+}
+
+.movies ul {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 5px;
+  -ms-grid-columns: minmax(300px, 1fr) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-auto-rows: 400px;
+  grid-auto-flow: row dense;
+}
+
+.movies ul li {
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-grid-column: auto;
+      grid-column-start: auto;
+  -ms-grid-row: auto;
+      grid-row-start: auto;
+}
+/*# sourceMappingURL=style.css.map */
